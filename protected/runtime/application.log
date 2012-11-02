@@ -1,0 +1,1429 @@
+2012/09/28 21:03:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "gi".' in C:\xampp\htdocs\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('gi')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiicms/gi
+---
+2012/09/29 19:20:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "админщ".' in C:\xampp\htdocs\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('????????????')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiicms/%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D1%89
+---
+2012/09/29 19:27:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "admin".' in C:\xampp\htdocs\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiicms/admin
+---
+2012/09/29 20:31:36 [error] [php] htmlspecialchars() expects parameter 1 to be string, object given (C:\xampp\htdocs\framework\web\helpers\CHtml.php:85)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CBaseController.php(174): CBreadcrumbs->run()
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\views\layouts\main.php(42): DefaultController->widget()
+#2 C:\xampp\htdocs\framework\web\CBaseController.php(127): require()
+#3 C:\xampp\htdocs\framework\web\CBaseController.php(96): DefaultController->renderInternal()
+#4 C:\xampp\htdocs\framework\web\widgets\CContentDecorator.php(77): DefaultController->renderFile()
+#5 C:\xampp\htdocs\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate()
+#6 C:\xampp\htdocs\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput()
+#7 C:\xampp\htdocs\framework\web\CBaseController.php(207): CContentDecorator->run()
+#8 C:\xampp\htdocs\framework\web\CBaseController.php(301): DefaultController->endWidget()
+#9 C:\xampp\htdocs\yiicms\protected\modules\admin\views\layouts\column2.php(22): DefaultController->endContent()
+#10 C:\xampp\htdocs\framework\web\CBaseController.php(127): require()
+#11 C:\xampp\htdocs\framework\web\CBaseController.php(96): DefaultController->renderInternal()
+#12 C:\xampp\htdocs\framework\web\CController.php(785): DefaultController->renderFile()
+#13 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php(7): DefaultController->render()
+#14 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#15 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#16 C:\xampp\htdocs\framework\web\CController.php(287): DefaultController->runAction()
+#17 C:\xampp\htdocs\framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#18 C:\xampp\htdocs\framework\web\CWebApplication.php(283): DefaultController->run()
+#19 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#20 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yiicms\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiicms/admin
+in C:\xampp\htdocs\yiicms\protected\modules\admin\views\layouts\main.php (42)
+in C:\xampp\htdocs\yiicms\protected\modules\admin\views\layouts\column2.php (22)
+in C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php (7)
+2012/09/29 21:02:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "admin".' in C:\xampp\htdocs\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(271): CController->missingAction('admin')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('admin')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin/category/...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiicms/admin/category/admin
+HTTP_REFERER=http://localhost/yiicms/admin/category/create
+---
+2012/09/29 21:11:43 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Category.кккк".' in C:\xampp\htdocs\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(144): CComponent->__get('????????')
+#1 C:\xampp\htdocs\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('????????')
+#2 C:\xampp\htdocs\framework\web\helpers\CHtml.php(1515): CHtml::resolveValue(Object(Category), '????????')
+#3 C:\xampp\htdocs\framework\web\widgets\CActiveForm.php(764): CHtml::activeDropDownList(Object(Category), '????????', Array, Array)
+#4 C:\xampp\htdocs\yiicms\protected\modules\admin\views\category\_form.php(26): CActiveForm->dropDownList(Object(Category), '????????', Array)
+#5 C:\xampp\htdocs\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yiicms\protected\modules\admin\views\category\create.php(17): CController->renderPartial('_form', Array)
+#9 C:\xampp\htdocs\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\htdocs\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#13 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\CategoryController.php(70): CController->render('create', Array)
+#14 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): CategoryController->actionCreate()
+#15 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#18 C:\xampp\htdocs\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#22 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('create')
+#24 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin/category/...')
+#25 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/yiicms/admin/category/create
+HTTP_REFERER=http://localhost/yiicms/site/login
+---
+2012/09/29 21:17:16 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CButtonColumn.ViewButtonOptions".' in C:\xampp\htdocs\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\xampp\htdocs\framework\YiiBase.php(222): CComponent->__set('ViewButtonOptio...', Array)
+#1 C:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(336): YiiBase::createComponent(Array, Object(CGridView))
+#2 C:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(307): CGridView->initColumns()
+#3 C:\xampp\htdocs\framework\web\CBaseController.php(148): CGridView->init()
+#4 C:\xampp\htdocs\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 C:\xampp\htdocs\yiicms\protected\modules\admin\views\category\index.php(47): CBaseController->widget('zii.widgets.gri...', Array)
+#6 C:\xampp\htdocs\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#10 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\CategoryController.php(128): CController->render('index', Array)
+#11 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): CategoryController->actionIndex()
+#12 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\xampp\htdocs\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('index')
+#21 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin/category/...')
+#22 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/yiicms/admin/category/index
+HTTP_REFERER=http://localhost/yiicms/admin/category/create
+---
+2012/09/29 21:19:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "admin".' in C:\xampp\htdocs\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(271): CController->missingAction('admin')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('admin')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin/category/...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiicms/admin/category/admin
+HTTP_REFERER=http://localhost/yiicms/admin/category/create
+---
+2012/09/29 21:19:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "admin".' in C:\xampp\htdocs\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(271): CController->missingAction('admin')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('admin')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin/category/...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiicms/admin/category/admin
+HTTP_REFERER=http://localhost/yiicms/admin/category/create
+---
+2012/09/29 22:07:38 [error] [php] Undefined variable: model (C:\xampp\htdocs\yiicms\protected\modules\admin\views\default\index.php:3)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(870): DefaultController->renderFile()
+#1 C:\xampp\htdocs\framework\web\CController.php(783): DefaultController->renderPartial()
+#2 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php(7): DefaultController->render()
+#3 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#4 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\framework\web\CController.php(287): DefaultController->runAction()
+#6 C:\xampp\htdocs\framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(283): DefaultController->run()
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yiicms\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiicms/admin
+in C:\xampp\htdocs\yiicms\protected\modules\admin\views\default\index.php (3)
+in C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php (7)
+in C:\xampp\htdocs\yiicms\index.php (13)
+2012/09/29 22:08:31 [error] [php] Undefined variable: attribute (C:\xampp\htdocs\yiicms\protected\modules\admin\views\category\index.php:51)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(870): CategoryController->renderFile()
+#1 C:\xampp\htdocs\framework\web\CController.php(783): CategoryController->renderPartial()
+#2 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\CategoryController.php(128): CategoryController->render()
+#3 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): CategoryController->actionIndex()
+#4 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CategoryController->runAction()
+#6 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\htdocs\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): CategoryController->filterAccessControl()
+#9 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\xampp\htdocs\framework\web\CController.php(266): CategoryController->runActionWithFilters()
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CategoryController->run()
+#13 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yiicms\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiicms/admin/category
+in C:\xampp\htdocs\yiicms\protected\modules\admin\views\category\index.php (51)
+in C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\CategoryController.php (128)
+in C:\xampp\htdocs\yiicms\index.php (13)
+2012/09/29 22:08:53 [error] [exception.CException] exception 'CException' with message 'Псевдоним "ext.niceditor.nicEditorWidget" неверен. Убедитесь, что он указывает на существующий PHP файл.' in C:\xampp\htdocs\framework\YiiBase.php:318
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWidgetFactory.php(147): YiiBase::import('ext.niceditor.n...', true)
+#1 C:\xampp\htdocs\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(CategoryController), 'ext.niceditor.n...', Array)
+#2 C:\xampp\htdocs\framework\web\CBaseController.php(173): CBaseController->createWidget('ext.niceditor.n...', Array)
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\views\category\index.php(56): CBaseController->widget('ext.niceditor.n...', Array)
+#4 C:\xampp\htdocs\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\CategoryController.php(128): CController->render('index', Array)
+#9 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): CategoryController->actionIndex()
+#10 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\xampp\htdocs\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#19 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin/category')
+#20 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yiicms/admin/category
+HTTP_REFERER=http://localhost/yiicms/admin
+---
+2012/09/29 22:09:35 [error] [php] Undefined variable: attribute (C:\xampp\htdocs\yiicms\protected\modules\admin\views\category\index.php:51)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(870): CategoryController->renderFile()
+#1 C:\xampp\htdocs\framework\web\CController.php(783): CategoryController->renderPartial()
+#2 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\CategoryController.php(128): CategoryController->render()
+#3 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): CategoryController->actionIndex()
+#4 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CategoryController->runAction()
+#6 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\htdocs\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): CategoryController->filterAccessControl()
+#9 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\xampp\htdocs\framework\web\CController.php(266): CategoryController->runActionWithFilters()
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CategoryController->run()
+#13 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yiicms\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiicms/admin/category
+in C:\xampp\htdocs\yiicms\protected\modules\admin\views\category\index.php (51)
+in C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\CategoryController.php (128)
+in C:\xampp\htdocs\yiicms\index.php (13)
+2012/09/29 22:09:48 [error] [php] Undefined variable: attribute (C:\xampp\htdocs\yiicms\protected\modules\admin\views\category\index.php:51)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(870): CategoryController->renderFile()
+#1 C:\xampp\htdocs\framework\web\CController.php(783): CategoryController->renderPartial()
+#2 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\CategoryController.php(128): CategoryController->render()
+#3 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): CategoryController->actionIndex()
+#4 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CategoryController->runAction()
+#6 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\htdocs\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): CategoryController->filterAccessControl()
+#9 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\xampp\htdocs\framework\web\CController.php(266): CategoryController->runActionWithFilters()
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CategoryController->run()
+#13 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yiicms\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiicms/admin/category
+in C:\xampp\htdocs\yiicms\protected\modules\admin\views\category\index.php (51)
+in C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\CategoryController.php (128)
+in C:\xampp\htdocs\yiicms\index.php (13)
+2012/09/29 22:10:06 [error] [php] Undefined variable: id (C:\xampp\htdocs\yiicms\protected\modules\admin\views\category\index.php:51)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(870): CategoryController->renderFile()
+#1 C:\xampp\htdocs\framework\web\CController.php(783): CategoryController->renderPartial()
+#2 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\CategoryController.php(128): CategoryController->render()
+#3 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): CategoryController->actionIndex()
+#4 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CategoryController->runAction()
+#6 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\htdocs\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): CategoryController->filterAccessControl()
+#9 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\xampp\htdocs\framework\web\CController.php(266): CategoryController->runActionWithFilters()
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CategoryController->run()
+#13 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yiicms\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiicms/admin/category
+in C:\xampp\htdocs\yiicms\protected\modules\admin\views\category\index.php (51)
+in C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\CategoryController.php (128)
+in C:\xampp\htdocs\yiicms\index.php (13)
+2012/09/29 22:10:16 [error] [php] Undefined variable: position (C:\xampp\htdocs\yiicms\protected\modules\admin\views\category\index.php:51)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(870): CategoryController->renderFile()
+#1 C:\xampp\htdocs\framework\web\CController.php(783): CategoryController->renderPartial()
+#2 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\CategoryController.php(128): CategoryController->render()
+#3 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): CategoryController->actionIndex()
+#4 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CategoryController->runAction()
+#6 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\htdocs\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): CategoryController->filterAccessControl()
+#9 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\xampp\htdocs\framework\web\CController.php(266): CategoryController->runActionWithFilters()
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CategoryController->run()
+#13 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yiicms\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiicms/admin/category
+in C:\xampp\htdocs\yiicms\protected\modules\admin\views\category\index.php (51)
+in C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\CategoryController.php (128)
+in C:\xampp\htdocs\yiicms\index.php (13)
+2012/09/29 22:10:26 [error] [exception.CException] exception 'CException' with message 'Псевдоним "ext.niceditor.nicEditorWidget" неверен. Убедитесь, что он указывает на существующий PHP файл.' in C:\xampp\htdocs\framework\YiiBase.php:318
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWidgetFactory.php(147): YiiBase::import('ext.niceditor.n...', true)
+#1 C:\xampp\htdocs\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(CategoryController), 'ext.niceditor.n...', Array)
+#2 C:\xampp\htdocs\framework\web\CBaseController.php(173): CBaseController->createWidget('ext.niceditor.n...', Array)
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\views\category\index.php(56): CBaseController->widget('ext.niceditor.n...', Array)
+#4 C:\xampp\htdocs\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\CategoryController.php(128): CController->render('index', Array)
+#9 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): CategoryController->actionIndex()
+#10 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\xampp\htdocs\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#19 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin/category')
+#20 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yiicms/admin/category
+HTTP_REFERER=http://localhost/yiicms/admin
+---
+2012/09/29 22:15:52 [error] [exception.CException] exception 'CException' with message 'Псевдоним "ext.yii-gravatar.YiiGravatar" неверен. Убедитесь, что он указывает на существующий PHP файл.' in C:\xampp\htdocs\framework\YiiBase.php:318
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWidgetFactory.php(147): YiiBase::import('ext.yii-gravata...', true)
+#1 C:\xampp\htdocs\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(CategoryController), 'ext.yii-gravata...', Array)
+#2 C:\xampp\htdocs\framework\web\CBaseController.php(173): CBaseController->createWidget('ext.yii-gravata...', Array)
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\views\category\index.php(62): CBaseController->widget('ext.yii-gravata...', Array)
+#4 C:\xampp\htdocs\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\CategoryController.php(128): CController->render('index', Array)
+#9 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): CategoryController->actionIndex()
+#10 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\xampp\htdocs\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#19 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin/category')
+#20 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yiicms/admin/category
+HTTP_REFERER=http://localhost/yiicms/admin
+---
+2012/09/29 22:16:25 [error] [exception.CException] exception 'CException' with message 'Неправильный алиас "extensions.yii-gravatar.YiiGravatar". Убедитесь, что он указывает на существующую директорию или файл.' in C:\xampp\htdocs\framework\YiiBase.php:343
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWidgetFactory.php(147): YiiBase::import('extensions.yii-...', true)
+#1 C:\xampp\htdocs\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(CategoryController), 'extensions.yii-...', Array)
+#2 C:\xampp\htdocs\framework\web\CBaseController.php(173): CBaseController->createWidget('extensions.yii-...', Array)
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\views\category\index.php(62): CBaseController->widget('extensions.yii-...', Array)
+#4 C:\xampp\htdocs\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\CategoryController.php(128): CController->render('index', Array)
+#9 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): CategoryController->actionIndex()
+#10 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\xampp\htdocs\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#19 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin/category')
+#20 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yiicms/admin/category
+HTTP_REFERER=http://localhost/yiicms/admin
+---
+2012/09/30 02:29:38 [error] [exception.CException] exception 'CException' with message 'Псевдоним "ext.socialshareprivacy.SocialSharePrivacy" неверен. Убедитесь, что он указывает на существующий PHP файл.' in C:\xampp\htdocs\framework\YiiBase.php:318
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWidgetFactory.php(147): YiiBase::import('ext.socialshare...', true)
+#1 C:\xampp\htdocs\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(CategoryController), 'ext.socialshare...', Array)
+#2 C:\xampp\htdocs\framework\web\CBaseController.php(173): CBaseController->createWidget('ext.socialshare...', Array)
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\views\category\index.php(61): CBaseController->widget('ext.socialshare...', Array)
+#4 C:\xampp\htdocs\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\CategoryController.php(128): CController->render('index', Array)
+#9 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): CategoryController->actionIndex()
+#10 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\xampp\htdocs\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#19 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin/category')
+#20 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yiicms/admin/category
+HTTP_REFERER=http://localhost/yiicms/admin/
+---
+2012/09/30 02:30:48 [error] [exception.CException] exception 'CException' with message 'Псевдоним "ext.SocialSharePrivacy" неверен. Убедитесь, что он указывает на существующий PHP файл.' in C:\xampp\htdocs\framework\YiiBase.php:318
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWidgetFactory.php(147): YiiBase::import('ext.SocialShare...', true)
+#1 C:\xampp\htdocs\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(CategoryController), 'ext.SocialShare...', Array)
+#2 C:\xampp\htdocs\framework\web\CBaseController.php(173): CBaseController->createWidget('ext.SocialShare...', Array)
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\views\category\index.php(61): CBaseController->widget('ext.SocialShare...', Array)
+#4 C:\xampp\htdocs\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\CategoryController.php(128): CController->render('index', Array)
+#9 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): CategoryController->actionIndex()
+#10 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\xampp\htdocs\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#19 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin/category')
+#20 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yiicms/admin/category
+HTTP_REFERER=http://localhost/yiicms/admin/
+---
+2012/09/30 02:32:21 [error] [exception.CException] exception 'CException' with message 'Псевдоним "ext.socialshareprivacy.SocialSharePrivacy" неверен. Убедитесь, что он указывает на существующий PHP файл.' in C:\xampp\htdocs\framework\YiiBase.php:318
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWidgetFactory.php(147): YiiBase::import('ext.socialshare...', true)
+#1 C:\xampp\htdocs\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(CategoryController), 'ext.socialshare...', Array)
+#2 C:\xampp\htdocs\framework\web\CBaseController.php(173): CBaseController->createWidget('ext.socialshare...', Array)
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\views\category\index.php(61): CBaseController->widget('ext.socialshare...', Array)
+#4 C:\xampp\htdocs\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\CategoryController.php(128): CController->render('index', Array)
+#9 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): CategoryController->actionIndex()
+#10 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\xampp\htdocs\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#19 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin/category')
+#20 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yiicms/admin/category
+HTTP_REFERER=http://localhost/yiicms/admin/
+---
+2012/09/30 02:59:14 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebApplication.facebook".' in C:\xampp\htdocs\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(106): CComponent->__get('facebook')
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\components\Controller.php(28): CModule->__get('facebook')
+#2 C:\xampp\htdocs\framework\web\CController.php(787): Controller->afterRender('index', '<!DOCTYPE html ...')
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php(7): CController->render('index')
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yiicms/admin
+HTTP_REFERER=http://localhost/yiicms/
+---
+2012/09/30 02:59:36 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebApplication.facebook".' in C:\xampp\htdocs\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(106): CComponent->__get('facebook')
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\components\Controller.php(28): CModule->__get('facebook')
+#2 C:\xampp\htdocs\framework\web\CController.php(787): Controller->afterRender('index', '<!DOCTYPE html ...')
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php(7): CController->render('index')
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yiicms/admin
+HTTP_REFERER=http://localhost/yiicms/
+---
+2012/09/30 02:59:37 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebApplication.facebook".' in C:\xampp\htdocs\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(106): CComponent->__get('facebook')
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\components\Controller.php(28): CModule->__get('facebook')
+#2 C:\xampp\htdocs\framework\web\CController.php(787): Controller->afterRender('index', '<!DOCTYPE html ...')
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php(7): CController->render('index')
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yiicms/admin
+HTTP_REFERER=http://localhost/yiicms/
+---
+2012/09/30 02:59:37 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebApplication.facebook".' in C:\xampp\htdocs\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(106): CComponent->__get('facebook')
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\components\Controller.php(28): CModule->__get('facebook')
+#2 C:\xampp\htdocs\framework\web\CController.php(787): Controller->afterRender('index', '<!DOCTYPE html ...')
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php(7): CController->render('index')
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yiicms/admin
+HTTP_REFERER=http://localhost/yiicms/
+---
+2012/09/30 02:59:37 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebApplication.facebook".' in C:\xampp\htdocs\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(106): CComponent->__get('facebook')
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\components\Controller.php(28): CModule->__get('facebook')
+#2 C:\xampp\htdocs\framework\web\CController.php(787): Controller->afterRender('index', '<!DOCTYPE html ...')
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php(7): CController->render('index')
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yiicms/admin
+HTTP_REFERER=http://localhost/yiicms/
+---
+2012/09/30 02:59:37 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebApplication.facebook".' in C:\xampp\htdocs\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(106): CComponent->__get('facebook')
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\components\Controller.php(28): CModule->__get('facebook')
+#2 C:\xampp\htdocs\framework\web\CController.php(787): Controller->afterRender('index', '<!DOCTYPE html ...')
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php(7): CController->render('index')
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yiicms/admin
+HTTP_REFERER=http://localhost/yiicms/
+---
+2012/09/30 02:59:38 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebApplication.facebook".' in C:\xampp\htdocs\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(106): CComponent->__get('facebook')
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\components\Controller.php(28): CModule->__get('facebook')
+#2 C:\xampp\htdocs\framework\web\CController.php(787): Controller->afterRender('index', '<!DOCTYPE html ...')
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php(7): CController->render('index')
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yiicms/admin
+HTTP_REFERER=http://localhost/yiicms/
+---
+2012/09/30 02:59:38 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebApplication.facebook".' in C:\xampp\htdocs\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(106): CComponent->__get('facebook')
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\components\Controller.php(28): CModule->__get('facebook')
+#2 C:\xampp\htdocs\framework\web\CController.php(787): Controller->afterRender('index', '<!DOCTYPE html ...')
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php(7): CController->render('index')
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yiicms/admin
+HTTP_REFERER=http://localhost/yiicms/
+---
+2012/09/30 02:59:48 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebApplication.facebook".' in C:\xampp\htdocs\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(106): CComponent->__get('facebook')
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\components\Controller.php(28): CModule->__get('facebook')
+#2 C:\xampp\htdocs\framework\web\CController.php(787): Controller->afterRender('index', '<!DOCTYPE html ...')
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php(7): CController->render('index')
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yiicms/admin
+HTTP_REFERER=http://localhost/yiicms/
+---
+2012/09/30 02:59:49 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebApplication.facebook".' in C:\xampp\htdocs\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(106): CComponent->__get('facebook')
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\components\Controller.php(28): CModule->__get('facebook')
+#2 C:\xampp\htdocs\framework\web\CController.php(787): Controller->afterRender('index', '<!DOCTYPE html ...')
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php(7): CController->render('index')
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yiicms/admin
+HTTP_REFERER=http://localhost/yiicms/
+---
+2012/09/30 02:59:49 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebApplication.facebook".' in C:\xampp\htdocs\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(106): CComponent->__get('facebook')
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\components\Controller.php(28): CModule->__get('facebook')
+#2 C:\xampp\htdocs\framework\web\CController.php(787): Controller->afterRender('index', '<!DOCTYPE html ...')
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php(7): CController->render('index')
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yiicms/admin
+HTTP_REFERER=http://localhost/yiicms/
+---
+2012/09/30 02:59:49 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebApplication.facebook".' in C:\xampp\htdocs\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(106): CComponent->__get('facebook')
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\components\Controller.php(28): CModule->__get('facebook')
+#2 C:\xampp\htdocs\framework\web\CController.php(787): Controller->afterRender('index', '<!DOCTYPE html ...')
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php(7): CController->render('index')
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yiicms/admin
+HTTP_REFERER=http://localhost/yiicms/
+---
+2012/09/30 02:59:49 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebApplication.facebook".' in C:\xampp\htdocs\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(106): CComponent->__get('facebook')
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\components\Controller.php(28): CModule->__get('facebook')
+#2 C:\xampp\htdocs\framework\web\CController.php(787): Controller->afterRender('index', '<!DOCTYPE html ...')
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php(7): CController->render('index')
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yiicms/admin
+HTTP_REFERER=http://localhost/yiicms/
+---
+2012/09/30 02:59:50 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebApplication.facebook".' in C:\xampp\htdocs\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(106): CComponent->__get('facebook')
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\components\Controller.php(28): CModule->__get('facebook')
+#2 C:\xampp\htdocs\framework\web\CController.php(787): Controller->afterRender('index', '<!DOCTYPE html ...')
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php(7): CController->render('index')
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yiicms/admin
+HTTP_REFERER=http://localhost/yiicms/
+---
+2012/09/30 03:00:14 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebApplication.facebook".' in C:\xampp\htdocs\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(106): CComponent->__get('facebook')
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\components\Controller.php(28): CModule->__get('facebook')
+#2 C:\xampp\htdocs\framework\web\CController.php(787): Controller->afterRender('index', '<!DOCTYPE html ...')
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php(7): CController->render('index')
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yiicms/admin
+HTTP_REFERER=http://localhost/yiicms/
+---
+2012/09/30 03:00:14 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebApplication.facebook".' in C:\xampp\htdocs\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(106): CComponent->__get('facebook')
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\components\Controller.php(28): CModule->__get('facebook')
+#2 C:\xampp\htdocs\framework\web\CController.php(787): Controller->afterRender('index', '<!DOCTYPE html ...')
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php(7): CController->render('index')
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yiicms/admin
+HTTP_REFERER=http://localhost/yiicms/
+---
+2012/09/30 03:00:14 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebApplication.facebook".' in C:\xampp\htdocs\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(106): CComponent->__get('facebook')
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\components\Controller.php(28): CModule->__get('facebook')
+#2 C:\xampp\htdocs\framework\web\CController.php(787): Controller->afterRender('index', '<!DOCTYPE html ...')
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php(7): CController->render('index')
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yiicms/admin
+HTTP_REFERER=http://localhost/yiicms/
+---
+2012/09/30 03:00:14 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebApplication.facebook".' in C:\xampp\htdocs\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(106): CComponent->__get('facebook')
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\components\Controller.php(28): CModule->__get('facebook')
+#2 C:\xampp\htdocs\framework\web\CController.php(787): Controller->afterRender('index', '<!DOCTYPE html ...')
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php(7): CController->render('index')
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yiicms/admin
+HTTP_REFERER=http://localhost/yiicms/
+---
+2012/09/30 03:00:14 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebApplication.facebook".' in C:\xampp\htdocs\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\framework\base\CModule.php(106): CComponent->__get('facebook')
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\components\Controller.php(28): CModule->__get('facebook')
+#2 C:\xampp\htdocs\framework\web\CController.php(787): Controller->afterRender('index', '<!DOCTYPE html ...')
+#3 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\DefaultController.php(7): CController->render('index')
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yiicms/admin
+HTTP_REFERER=http://localhost/yiicms/
+---
+2012/10/01 08:22:50 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\yiicms\protected\modules\admin\views\page\index.php:18)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(870): PageController->renderFile()
+#1 C:\xampp\htdocs\framework\web\CController.php(783): PageController->renderPartial()
+#2 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\PageController.php(130): PageController->render()
+#3 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): PageController->actionIndex()
+#4 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): PageController->runAction()
+#6 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\htdocs\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): PageController->filterAccessControl()
+#9 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\xampp\htdocs\framework\web\CController.php(266): PageController->runActionWithFilters()
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(283): PageController->run()
+#13 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yiicms\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiicms/admin/page
+in C:\xampp\htdocs\yiicms\protected\modules\admin\views\page\index.php (18)
+in C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\PageController.php (130)
+in C:\xampp\htdocs\yiicms\index.php (13)
+2012/10/01 08:29:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "admin".' in C:\xampp\htdocs\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(271): CController->missingAction('admin')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('admin')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin/page/admi...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiicms/admin/page/admin
+HTTP_REFERER=http://localhost/yiicms/admin/page/create
+---
+2012/10/01 08:30:44 [error] [exception.CException] exception 'CException' with message 'Контроллер PageController не может найти представление "update".' in C:\xampp\htdocs\framework\web\CController.php:879
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(783): CController->renderPartial('update', Array, true)
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\PageController.php(99): CController->render('update', Array)
+#2 [internal function]: PageController->actionUpdate('1')
+#3 C:\xampp\htdocs\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('update')
+#14 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin/page/upda...')
+#15 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiicms/admin/page/update/id/1
+HTTP_REFERER=http://localhost/yiicms/admin/page/index
+---
+2012/10/01 08:34:45 [error] [exception.CException] exception 'CException' with message 'Контроллер PageController не может найти представление "view".' in C:\xampp\htdocs\framework\web\CController.php:879
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\PageController.php(52): CController->render('view', Array)
+#2 [internal function]: PageController->actionView('1')
+#3 C:\xampp\htdocs\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('view')
+#14 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin/page/view...')
+#15 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiicms/admin/page/view/id/1
+HTTP_REFERER=http://localhost/yiicms/admin/page/update/id/1
+---
+2012/10/01 08:55:00 [error] [php] Undefined variable: language (C:\xampp\htdocs\yiicms\protected\extensions\ckeditor\CKEditor.php:90)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CBaseController.php(147): CWidgetFactory->createWidget()
+#1 C:\xampp\htdocs\framework\web\CBaseController.php(173): PageController->createWidget()
+#2 C:\xampp\htdocs\yiicms\protected\modules\admin\views\page\_form.php(30): PageController->widget()
+#3 C:\xampp\htdocs\framework\web\CBaseController.php(127): require()
+#4 C:\xampp\htdocs\framework\web\CBaseController.php(96): PageController->renderInternal()
+#5 C:\xampp\htdocs\framework\web\CController.php(870): PageController->renderFile()
+#6 C:\xampp\htdocs\yiicms\protected\modules\admin\views\page\create.php(17): PageController->renderPartial()
+#7 C:\xampp\htdocs\framework\web\CBaseController.php(127): require()
+#8 C:\xampp\htdocs\framework\web\CBaseController.php(96): PageController->renderInternal()
+#9 C:\xampp\htdocs\framework\web\CController.php(870): PageController->renderFile()
+#10 C:\xampp\htdocs\framework\web\CController.php(783): PageController->renderPartial()
+#11 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\PageController.php(75): PageController->render()
+#12 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): PageController->actionCreate()
+#13 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): PageController->runAction()
+#15 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 C:\xampp\htdocs\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#17 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): PageController->filterAccessControl()
+#18 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#19 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\xampp\htdocs\framework\web\CController.php(266): PageController->runActionWithFilters()
+#21 C:\xampp\htdocs\framework\web\CWebApplication.php(283): PageController->run()
+#22 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#23 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\yiicms\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiicms/admin/page/create
+in C:\xampp\htdocs\yiicms\protected\extensions\ckeditor\CKEditor.php (90)
+in C:\xampp\htdocs\yiicms\protected\extensions\ckeditor\CKEditor.php (78)
+in C:\xampp\htdocs\yiicms\protected\modules\admin\views\page\_form.php (30)
+2012/10/01 08:55:20 [error] [php] Undefined variable: language (C:\xampp\htdocs\yiicms\protected\extensions\ckeditor\CKEditor.php:90)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CBaseController.php(147): CWidgetFactory->createWidget()
+#1 C:\xampp\htdocs\framework\web\CBaseController.php(173): PageController->createWidget()
+#2 C:\xampp\htdocs\yiicms\protected\modules\admin\views\page\_form.php(30): PageController->widget()
+#3 C:\xampp\htdocs\framework\web\CBaseController.php(127): require()
+#4 C:\xampp\htdocs\framework\web\CBaseController.php(96): PageController->renderInternal()
+#5 C:\xampp\htdocs\framework\web\CController.php(870): PageController->renderFile()
+#6 C:\xampp\htdocs\yiicms\protected\modules\admin\views\page\create.php(17): PageController->renderPartial()
+#7 C:\xampp\htdocs\framework\web\CBaseController.php(127): require()
+#8 C:\xampp\htdocs\framework\web\CBaseController.php(96): PageController->renderInternal()
+#9 C:\xampp\htdocs\framework\web\CController.php(870): PageController->renderFile()
+#10 C:\xampp\htdocs\framework\web\CController.php(783): PageController->renderPartial()
+#11 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\PageController.php(75): PageController->render()
+#12 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): PageController->actionCreate()
+#13 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): PageController->runAction()
+#15 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 C:\xampp\htdocs\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#17 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): PageController->filterAccessControl()
+#18 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#19 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\xampp\htdocs\framework\web\CController.php(266): PageController->runActionWithFilters()
+#21 C:\xampp\htdocs\framework\web\CWebApplication.php(283): PageController->run()
+#22 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#23 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\yiicms\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiicms/admin/page/create
+in C:\xampp\htdocs\yiicms\protected\extensions\ckeditor\CKEditor.php (90)
+in C:\xampp\htdocs\yiicms\protected\extensions\ckeditor\CKEditor.php (78)
+in C:\xampp\htdocs\yiicms\protected\modules\admin\views\page\_form.php (30)
+2012/10/01 08:57:09 [error] [php] Undefined variable: language (C:\xampp\htdocs\yiicms\protected\extensions\ckeditor\CKEditor.php:90)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CBaseController.php(147): CWidgetFactory->createWidget()
+#1 C:\xampp\htdocs\framework\web\CBaseController.php(173): PageController->createWidget()
+#2 C:\xampp\htdocs\yiicms\protected\modules\admin\views\page\_form.php(30): PageController->widget()
+#3 C:\xampp\htdocs\framework\web\CBaseController.php(127): require()
+#4 C:\xampp\htdocs\framework\web\CBaseController.php(96): PageController->renderInternal()
+#5 C:\xampp\htdocs\framework\web\CController.php(870): PageController->renderFile()
+#6 C:\xampp\htdocs\yiicms\protected\modules\admin\views\page\create.php(17): PageController->renderPartial()
+#7 C:\xampp\htdocs\framework\web\CBaseController.php(127): require()
+#8 C:\xampp\htdocs\framework\web\CBaseController.php(96): PageController->renderInternal()
+#9 C:\xampp\htdocs\framework\web\CController.php(870): PageController->renderFile()
+#10 C:\xampp\htdocs\framework\web\CController.php(783): PageController->renderPartial()
+#11 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\PageController.php(75): PageController->render()
+#12 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): PageController->actionCreate()
+#13 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): PageController->runAction()
+#15 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 C:\xampp\htdocs\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#17 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): PageController->filterAccessControl()
+#18 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#19 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\xampp\htdocs\framework\web\CController.php(266): PageController->runActionWithFilters()
+#21 C:\xampp\htdocs\framework\web\CWebApplication.php(283): PageController->run()
+#22 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#23 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\yiicms\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiicms/admin/page/create
+in C:\xampp\htdocs\yiicms\protected\extensions\ckeditor\CKEditor.php (90)
+in C:\xampp\htdocs\yiicms\protected\extensions\ckeditor\CKEditor.php (78)
+in C:\xampp\htdocs\yiicms\protected\modules\admin\views\page\_form.php (30)
+2012/10/01 08:58:00 [error] [php] Undefined variable: language (C:\xampp\htdocs\yiicms\protected\extensions\ckeditor\CKEditor.php:90)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CBaseController.php(147): CWidgetFactory->createWidget()
+#1 C:\xampp\htdocs\framework\web\CBaseController.php(173): PageController->createWidget()
+#2 C:\xampp\htdocs\yiicms\protected\modules\admin\views\page\_form.php(30): PageController->widget()
+#3 C:\xampp\htdocs\framework\web\CBaseController.php(127): require()
+#4 C:\xampp\htdocs\framework\web\CBaseController.php(96): PageController->renderInternal()
+#5 C:\xampp\htdocs\framework\web\CController.php(870): PageController->renderFile()
+#6 C:\xampp\htdocs\yiicms\protected\modules\admin\views\page\create.php(17): PageController->renderPartial()
+#7 C:\xampp\htdocs\framework\web\CBaseController.php(127): require()
+#8 C:\xampp\htdocs\framework\web\CBaseController.php(96): PageController->renderInternal()
+#9 C:\xampp\htdocs\framework\web\CController.php(870): PageController->renderFile()
+#10 C:\xampp\htdocs\framework\web\CController.php(783): PageController->renderPartial()
+#11 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\PageController.php(75): PageController->render()
+#12 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): PageController->actionCreate()
+#13 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): PageController->runAction()
+#15 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 C:\xampp\htdocs\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#17 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): PageController->filterAccessControl()
+#18 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#19 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\xampp\htdocs\framework\web\CController.php(266): PageController->runActionWithFilters()
+#21 C:\xampp\htdocs\framework\web\CWebApplication.php(283): PageController->run()
+#22 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#23 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\yiicms\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiicms/admin/page/create
+in C:\xampp\htdocs\yiicms\protected\extensions\ckeditor\CKEditor.php (90)
+in C:\xampp\htdocs\yiicms\protected\extensions\ckeditor\CKEditor.php (78)
+in C:\xampp\htdocs\yiicms\protected\modules\admin\views\page\_form.php (30)
+2012/10/01 09:07:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/cb0daffc/contents.css".' in C:\xampp\htdocs\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('assets/cb0daffc...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiicms/assets/cb0daffc/contents.css
+---
+2012/10/01 09:07:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/cb0daffc/contents.css".' in C:\xampp\htdocs\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('assets/cb0daffc...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiicms/assets/cb0daffc/contents.css
+---
+2012/10/01 09:14:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/cb0daffc/contents.css".' in C:\xampp\htdocs\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('assets/cb0daffc...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiicms/assets/cb0daffc/contents.css
+---
+2012/10/01 09:38:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/cb0daffc/contents.css".' in C:\xampp\htdocs\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('assets/cb0daffc...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiicms/assets/cb0daffc/contents.css
+---
+2012/10/01 09:42:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/cb0daffc/contents.css".' in C:\xampp\htdocs\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('assets/cb0daffc...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiicms/assets/cb0daffc/contents.css
+---
+2012/10/01 09:44:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/cb0daffc/contents.css".' in C:\xampp\htdocs\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('assets/cb0daffc...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiicms/assets/cb0daffc/contents.css
+---
+2012/10/01 10:01:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/cb0daffc/contents.css".' in C:\xampp\htdocs\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('assets/cb0daffc...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiicms/assets/cb0daffc/contents.css
+---
+2012/10/01 10:01:42 [error] [exception.CException] exception 'CException' with message 'Контроллер PageController не может найти представление "view".' in C:\xampp\htdocs\framework\web\CController.php:879
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\PageController.php(52): CController->render('view', Array)
+#2 [internal function]: PageController->actionView('2')
+#3 C:\xampp\htdocs\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('view')
+#14 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin/page/view...')
+#15 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiicms/admin/page/view/id/2
+HTTP_REFERER=http://localhost/yiicms/admin/page/create
+---
+2012/10/01 10:09:20 [error] [exception.CException] exception 'CException' with message 'Контроллер PageController не может найти представление "view".' in C:\xampp\htdocs\framework\web\CController.php:879
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\PageController.php(52): CController->render('view', Array)
+#2 [internal function]: PageController->actionView('2')
+#3 C:\xampp\htdocs\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('view')
+#14 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin/page/view...')
+#15 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiicms/admin/page/view/id/2
+HTTP_REFERER=http://localhost/yiicms/admin/page/create
+---
+2012/10/01 10:13:14 [error] [php] call_user_func_array() expects parameter 1 to be a valid callback, no array or string given (C:\xampp\htdocs\framework\base\CComponent.php:612)
+Stack trace:
+#0 C:\xampp\htdocs\framework\zii\widgets\grid\CGridColumn.php(145): CDataColumn->renderDataCellContent()
+#1 C:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(546): CDataColumn->renderDataCell()
+#2 C:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(517): CGridView->renderTableRow()
+#3 C:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(427): CGridView->renderTableBody()
+#4 C:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(161): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 C:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(144): preg_replace_callback()
+#7 C:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(129): CGridView->renderContent()
+#8 C:\xampp\htdocs\framework\web\CBaseController.php(174): CGridView->run()
+#9 C:\xampp\htdocs\yiicms\protected\modules\admin\views\page\index.php(57): PageController->widget()
+#10 C:\xampp\htdocs\framework\web\CBaseController.php(127): require()
+#11 C:\xampp\htdocs\framework\web\CBaseController.php(96): PageController->renderInternal()
+#12 C:\xampp\htdocs\framework\web\CController.php(870): PageController->renderFile()
+#13 C:\xampp\htdocs\framework\web\CController.php(783): PageController->renderPartial()
+#14 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\PageController.php(130): PageController->render()
+#15 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): PageController->actionIndex()
+#16 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#17 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): PageController->runAction()
+#18 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\xampp\htdocs\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#20 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): PageController->filterAccessControl()
+#21 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#22 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\xampp\htdocs\framework\web\CController.php(266): PageController->runActionWithFilters()
+#24 C:\xampp\htdocs\framework\web\CWebApplication.php(283): PageController->run()
+#25 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#26 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\yiicms\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiicms/admin/page/
+in C:\xampp\htdocs\yiicms\protected\modules\admin\views\page\index.php (57)
+in C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\PageController.php (130)
+in C:\xampp\htdocs\yiicms\index.php (13)
+2012/10/01 10:13:35 [error] [php] Use of undefined constant sdfsdf - assumed 'sdfsdf' (C:\xampp\htdocs\framework\base\CComponent.php(607) : eval()'d code:1)
+Stack trace:
+#0 C:\xampp\htdocs\framework\zii\widgets\grid\CGridColumn.php(145): CDataColumn->renderDataCellContent()
+#1 C:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(546): CDataColumn->renderDataCell()
+#2 C:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(517): CGridView->renderTableRow()
+#3 C:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(427): CGridView->renderTableBody()
+#4 C:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(161): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 C:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(144): preg_replace_callback()
+#7 C:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(129): CGridView->renderContent()
+#8 C:\xampp\htdocs\framework\web\CBaseController.php(174): CGridView->run()
+#9 C:\xampp\htdocs\yiicms\protected\modules\admin\views\page\index.php(57): PageController->widget()
+#10 C:\xampp\htdocs\framework\web\CBaseController.php(127): require()
+#11 C:\xampp\htdocs\framework\web\CBaseController.php(96): PageController->renderInternal()
+#12 C:\xampp\htdocs\framework\web\CController.php(870): PageController->renderFile()
+#13 C:\xampp\htdocs\framework\web\CController.php(783): PageController->renderPartial()
+#14 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\PageController.php(130): PageController->render()
+#15 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): PageController->actionIndex()
+#16 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#17 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): PageController->runAction()
+#18 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\xampp\htdocs\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#20 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): PageController->filterAccessControl()
+#21 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#22 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\xampp\htdocs\framework\web\CController.php(266): PageController->runActionWithFilters()
+#24 C:\xampp\htdocs\framework\web\CWebApplication.php(283): PageController->run()
+#25 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#26 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\yiicms\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiicms/admin/page/
+in C:\xampp\htdocs\yiicms\protected\modules\admin\views\page\index.php (57)
+in C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\PageController.php (130)
+in C:\xampp\htdocs\yiicms\index.php (13)
+2012/10/01 10:23:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/cb0daffc/contents.css".' in C:\xampp\htdocs\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('assets/cb0daffc...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiicms/assets/cb0daffc/contents.css
+---
+2012/10/01 10:38:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/cb0daffc/contents.css".' in C:\xampp\htdocs\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('assets/cb0daffc...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiicms/assets/cb0daffc/contents.css
+---
+2012/10/01 10:48:23 [error] [php] Undefined variable: data (C:\xampp\htdocs\yiicms\protected\modules\admin\views\page\index.php:56)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(870): PageController->renderFile()
+#1 C:\xampp\htdocs\framework\web\CController.php(783): PageController->renderPartial()
+#2 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\PageController.php(130): PageController->render()
+#3 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): PageController->actionIndex()
+#4 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): PageController->runAction()
+#6 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\htdocs\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): PageController->filterAccessControl()
+#9 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\xampp\htdocs\framework\web\CController.php(266): PageController->runActionWithFilters()
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(283): PageController->run()
+#13 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yiicms\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiicms/admin/page
+in C:\xampp\htdocs\yiicms\protected\modules\admin\views\page\index.php (56)
+in C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\PageController.php (130)
+in C:\xampp\htdocs\yiicms\index.php (13)
+2012/10/01 12:27:43 [error] [exception.CException] exception 'CException' with message 'Контроллер UserController не может найти представление "index".' in C:\xampp\htdocs\framework\web\CController.php:879
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\UserController.php(124): CController->render('index', Array)
+#2 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(50): UserController->actionIndex()
+#3 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\xampp\htdocs\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#10 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('')
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin/user')
+#13 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yiicms/admin/user
+HTTP_REFERER=http://localhost/yiicms/admin/page
+---
+2012/10/01 13:20:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "create".' in C:\xampp\htdocs\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(271): CController->missingAction('create')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('create')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin/user/crea...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiicms/admin/user/create
+HTTP_REFERER=http://localhost/yiicms/admin/user
+---
+2012/10/01 13:20:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "create".' in C:\xampp\htdocs\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(271): CController->missingAction('create')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('create')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('site/create')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiicms/site/create
+---
+2012/10/01 14:00:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "view".' in C:\xampp\htdocs\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(271): CController->missingAction('view')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('view')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin/category/...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiicms/admin/category/view/id/2
+HTTP_REFERER=http://localhost/yiicms/admin/category/update/id/2
+---
+2012/10/03 09:07:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index.html".' in C:\xampp\htdocs\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(271): CController->missingAction('index.html')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('index.html')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('site/index.html')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiicms/site/index.html
+HTTP_REFERER=http://localhost/yiicms/admin/category.html
+---
+2012/10/03 09:07:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index.html".' in C:\xampp\htdocs\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(271): CController->missingAction('index.html')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('index.html')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('site/index.html')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiicms/site/index.html
+---
+2012/10/03 09:07:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index.html".' in C:\xampp\htdocs\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(271): CController->missingAction('index.html')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('index.html')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('site/index.html')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiicms/site/index.html
+---
+2012/10/03 09:07:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index.html".' in C:\xampp\htdocs\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(271): CController->missingAction('index.html')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('index.html')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('site/index.html')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiicms/site/index.html
+---
+2012/10/03 09:07:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index.html".' in C:\xampp\htdocs\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(271): CController->missingAction('index.html')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('index.html')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('site/index.html')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiicms/site/index.html
+---
+2012/10/03 09:07:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index.html".' in C:\xampp\htdocs\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(271): CController->missingAction('index.html')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('index.html')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('site/index.html')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiicms/site/index.html
+---
+2012/10/03 09:08:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index.html".' in C:\xampp\htdocs\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(271): CController->missingAction('index.html')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('index.html')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('site/index.html')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiicms/site/index.html
+---
+2012/10/03 09:08:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index.phtml".' in C:\xampp\htdocs\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(271): CController->missingAction('index.phtml')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('index.phtml')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('site/index.phtm...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiicms/site/index.phtml
+HTTP_REFERER=http://localhost/yiicms/site/index.html
+---
+2012/10/03 09:08:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index.phtmldfsdf".' in C:\xampp\htdocs\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(271): CController->missingAction('index.phtmldfsd...')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('index.phtmldfsd...')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('site/index.phtm...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiicms/site/index.phtmldfsdf
+HTTP_REFERER=http://localhost/yiicms/site/index.phtml
+---
+2012/10/03 09:08:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "contact.sexy".' in C:\xampp\htdocs\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(271): CController->missingAction('contact.sexy')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('contact.sexy')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('site/contact.se...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiicms/site/contact.sexy
+HTTP_REFERER=http://localhost/yiicms/site/page.sexy?view=about
+---
+2012/10/03 12:33:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "google.com".' in C:\xampp\htdocs\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('google.com')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiicms/google.com
+HTTP_REFERER=http://localhost/yiicms/
+---
+2012/10/03 14:40:17 [error] [exception.CException] exception 'CException' with message 'Контроллер PageController не может найти представление "view".' in C:\xampp\htdocs\framework\web\CController.php:879
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#1 C:\xampp\htdocs\yiicms\protected\modules\admin\controllers\PageController.php(52): CController->render('view', Array)
+#2 [internal function]: PageController->actionView('2')
+#3 C:\xampp\htdocs\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\framework\web\CWebApplication.php(283): CController->run('view')
+#14 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('admin/page/view...')
+#15 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiicms/admin/page/view/id/2.html
+HTTP_REFERER=http://localhost/yiicms/admin/page.html
+---
+2012/10/03 14:40:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/cb0daffc/contents.css".' in C:\xampp\htdocs\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('assets/cb0daffc...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiicms/assets/cb0daffc/contents.css
+---
+2012/10/03 14:40:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/cb0daffc/contents.css".' in C:\xampp\htdocs\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(142): CWebApplication->runController('assets/cb0daffc...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yiicms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiicms/assets/cb0daffc/contents.css
+---
